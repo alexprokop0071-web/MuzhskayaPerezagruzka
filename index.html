@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мужская Перезагрузка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>⚔️ Мужская Перезагрузка</h1>
+            <p>60-дневный трекер трансформации</p>
+        </header>
+        
+        <div class="progress-tracker">
+            <div class="level-display">
+                Уровень: <span id="level">1</span>
+            </div>
+            <progress id="exp-bar" value="0" max="100"></progress>
+            <div class="exp-display">
+                EXP: <span id="exp">0</span>/100
+            </div>
+        </div>
+        
+        <nav class="main-nav">
+            <button class="nav-btn active" data-section="physical">💪 Физика</button>
+            <button class="nav-btn" data-section="mental">🧠 Психика</button>
+            <button class="nav-btn" data-section="identity">🦸 Идентичность</button>
+        </nav>
+        
+        <section id="physical" class="content-section active">
+            <!-- Физические задания -->
+        </section>
+        
+        <section id="mental" class="content-section">
+            <!-- Психические задания -->
+        </section>
+        
+        <section id="identity" class="content-section">
+            <!-- Задания на идентичность -->
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
